@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Filter</title>
+</head>
+
+<body class="m-0 p-0 bg-red-300 font-serif">
+    <div class="text-center my-20">
+
+        <h1 class="text-3xl">Our Products</h1>
+
+        <div class="my-10 flex md:flex-no-wrap flex-wrap items-center justify-center gap-5">
+            <p data-filter="lipstick" class="productGroup cursor-pointer px-5 py-2 border">Lipstick</p>
+            <p data-filter="eyeshadow" class="productGroup cursor-pointer px-5 py-2 border">Eyeshadow</p>
+            <p data-filter="mascara" class="productGroup cursor-pointer px-5 py-2 border">Mascara</p>
+            <p data-filter="body-lotion" class="productGroup cursor-pointer px-5 py-2 border">Body lotion</p>
+            <p data-filter="perfumes" class="productGroup cursor-pointer px-5 py-2 border">Perfumes</p>
+        </div>
+        <div class="my-10 m-auto md:w-1/2 w-10/12 flex items-center justify-center">
+            <i class="search-btn p-2 h-10 bg-green-400 fas fa-search"></i>
+            <input class="search-item w-full h-10 pl-2 bg-white text-xl" type="text" placeholder="search items...">
+        </div>
+    </div>
+
+
+    <div class="bg-black lg:p-10 p-2 grid md:grid-cols-3 grid-cols-1 lg:gap-5 gap-2">
+        <div class="product" data-item="lipstick">
+            <img class="w-full" src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+            <div class="addToCart hidden w-full">
+                <p class="p-2 text-center text-white hover:text-red-700 cursor-pointer bg-black text-2xl font-bold">Add to Cart</p>
+            </div>
+            <div class="w-full bg-white p-4 font-bold flex items-center justify-between">
+                <p>pink Lipstick</p>
+                <p>$10</p>
+            </div>
+        </div>
+        <div class="product" data-item="eyeshadow">
+            <img class="w-full" src="https://images.pexels.com/photos/4938511/pexels-photo-4938511.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+            <div class="addToCart hidden w-full">
+                <p class="p-2 text-center text-white hover:text-red-700 cursor-pointer bg-black text-2xl font-bold">Add to Cart</p>
+            </div>
+            <div class="w-full bg-white p-4 font-bold flex items-center justify-between">
+                <p>Nude Eyeshadow pallete</p>
+                <p>$20</p>
+            </div>
+        </div>
+        <div class="product" data-item="mascara">
+            <img class="w-full" src="https://images.pexels.com/photos/3373745/pexels-photo-3373745.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="">
+            <div class="addToCart hidden w-full">
+                <p class="p-2 text-center text-white hover:text-red-700 cursor-pointer bg-black text-2xl font-bold">Add to Cart</p>
+            </div>
+            <div class="w-full bg-white p-4 font-bold flex items-center justify-between">
+                <p>Yellow pack Mascara</p>
+                <p>$5</p>
+            </div>
+        </div>
+        <div class="product" data-item="mascara">
+            <img class="w-full" src="https://images.pexels.com/photos/3373731/pexels-photo-3373731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <div class="addToCart hidden w-full">
+                <p class="p-2 text-center text-white hover:text-red-700 cursor-pointer bg-black text-2xl font-bold">Add to Cart</p>
+            </div>
+            <div class="w-full bg-white p-4 font-bold flex items-center justify-between">
+                <p>Blue pack mascara</p>
+                <p>$5</p>
+            </div>
+        </div>
+        <div class="product" data-item="perfumes">
+            <img class="w-full" src="https://images.pexels.com/photos/4465969/pexels-photo-4465969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+            <div class="addToCart hidden w-full">
+                <p class="p-2 text-center text-white hover:text-red-700 cursor-pointer bg-black text-2xl font-bold">Add to Cart</p>
+            </div>
+            <div class="w-full bg-white p-4 font-bold flex items-center justify-between">
+                <p>Aleo fragrance</p>
+                <p>$15</p>
+            </div>
+        </div>
+        <div class="product" data-item="eyeshadow">
+            <img class="w-full" src="https://images.pexels.com/photos/1327689/pexels-photo-1327689.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+            <div class="addToCart hidden w-full">
+                <p class="p-2 text-center text-white hover:text-red-700 cursor-pointer bg-black text-2xl font-bold">Add to Cart</p>
+            </div>
+            <div class="w-full bg-white p-4 font-bold flex items-center justify-between">
+                <p>Loud eyeshadow pallete</p>
+                <p>$15</p>
+            </div>
+        </div>
+        <div class="product" data-item="lipstick">
+            <img class="w-full" src="https://images.pexels.com/photos/2957497/pexels-photo-2957497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <div class="addToCart hidden w-full">
+                <p class="p-2 text-center text-white hover:text-red-700 cursor-pointer bg-black text-2xl font-bold">Add to Cart</p>
+            </div>
+            <div class="w-full bg-white p-4 font-bold flex items-center justify-between">
+                <p>Nude Lipstick</p>
+                <p>$12</p>
+            </div>
+        </div>
+        <div class="product" data-item="perfumes">
+            <img class="w-full" src="https://images.pexels.com/photos/1961795/pexels-photo-1961795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <div class="addToCart hidden w-full">
+                <p class="p-2 text-center text-white hover:text-red-700 cursor-pointer bg-black text-2xl font-bold">Add to Cart</p>
+            </div>
+            <div class="w-full bg-white p-4 font-bold flex items-center justify-between">
+                <p>Dolce and GAbbana fragrance</p>
+                <p>$10</p>
+            </div>
+        </div>
+        <div class="product" data-item="body-lotion">
+            <img class="w-full" src="https://images.pexels.com/photos/5798000/pexels-photo-5798000.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+            <div class="addToCart hidden w-full">
+                <p class="p-2 text-center text-white hover:text-red-700 cursor-pointer bg-black text-2xl font-bold">Add to Cart</p>
+            </div>
+            <div class="w-full bg-white p-4 font-bold flex items-center justify-between">
+                <p>Wjitenining body lotion</p>
+                <p>$25</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

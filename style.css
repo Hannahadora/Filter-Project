@@ -1,0 +1,12 @@
+body{
+    box-sizing: border-box;
+}
+
+
+.addtocart {
+    display:hidden;
+}
+
+/* .product:hover + .addToCart{
+    display: block;
+} */
